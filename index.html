@@ -5,10 +5,15 @@
   <link rel="stylesheet" href="charades.css">
 </head>
 <body>
-  <div class="container">
-    <p class="prompt">Your Prompt is: Busy Bee</p>
-    <input type="text" class="input-box" placeholder="Enter your text here">
+  <div class="shared-screen">
+    <p id="act"></p>
   </div>
-  <script src="charades.js"></script>
+  <div class="prompt-and-input">
+    <p id="prompt">Your Prompt is: Busy Bee</p>
+    <input type="text" id="input" placeholder="Enter your act">
+    <button id="send-button">Send</button>
+    <p id="feedback"></p>
+  </div>
+  <script src="main.js" type="module"></script>
 </body>
 </html>
